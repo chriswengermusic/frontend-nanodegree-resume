@@ -48,7 +48,6 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -65,11 +64,16 @@ h2, h3, h4, h5 {
   float: right;
 
 }
+.other-text {
+  font-size: 14px;
+  color:#999999;
+  line-height: 16px;
+}
 
 p {
   font-size: 14px;
   color: #333333;
-  line-height: 21px;
+  line-height: 18px;
 }
 
 a {
