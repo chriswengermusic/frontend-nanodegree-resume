@@ -171,12 +171,13 @@ education.display = function(){
 		$(".education-entry:last").append(formattedSchoolCity);
 		$(".education-entry:last").append(formattedSchoolMajor);
 	}
+	$("#education").append(HTMLonlineClasses);
 	for(var course in education.online_courses){
 		var formattedCourseTitle = HTMLonlineTitle.replace("%data%", education.online_courses[course].title);
 		var formattedCourseSchool = HTMLonlineSchool.replace("%data%", education.online_courses[course].school);
 		var formattedCourseDates = HTMLonlineDates.replace("%data%", education.online_courses[course].dates);
 		var formattedCourseURL = HTMLonlineURL.replace("%data%", education.online_courses[course].url);
-		$("#education").append(HTMLonlineClasses);
+		$("#education").append(HTMLschoolStart);
 		$(".education-entry:last").append(formattedCourseTitle);
 		$(".education-entry:last").append(formattedCourseSchool);
 		$(".education-entry:last").append(formattedCourseDates);
